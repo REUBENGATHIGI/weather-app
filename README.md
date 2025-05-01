@@ -1,19 +1,20 @@
-# 🌦️ Weather App — Laravel API & Next.js Frontend
+#  Weather App — Laravel API & Next.js Frontend
 
 A decoupled weather application using **Laravel (backend)** and **Next.js with TypeScript (frontend)**. It fetches real-time weather data from the [OpenWeatherMap API](https://openweathermap.org/api) and displays it with a modern UI using **RippleUI + TailwindCSS**.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 weather-app/  backend/ # Laravel API  frontend/ # Next.js + TypeScript + RippleUI
-Install dependencies:
+
+#Install dependencies:
 
 bash
 Copy
 Edit
 composer install
 
-Set up environment:
+#Set up environment:
 
 bash
 Copy
@@ -21,7 +22,7 @@ Edit
 cp .env.example .env
 php artisan key:generate
 
-Add your OpenWeatherMap API key to .env:
+#Add your OpenWeatherMap API key to .env:
 
 ini
 Copy
@@ -33,32 +34,37 @@ bash
 Copy
 Edit
 php artisan serve
-API Endpoint Example:
+
+#API Endpoint Example:
 
 bash
 Copy
 Edit
 GET http://localhost:8000/api/weather?city=Nairobi
  Frontend – Next.js (with RippleUI)
-Navigate to the frontend folder:
+ 
+#Navigate to the frontend folder:
 
 bash
 Copy
 Edit
 cd frontend
-Install dependencies:
+
+#Install dependencies:
 
 bash
 Copy
 Edit
 npm install
-Run the development server:
+
+#Run the development server:
 
 bash
 Copy
 Edit
 npm run dev
-Visit in browser:
+
+#Visit in browser:
 
 arduino
 Copy
@@ -66,7 +72,7 @@ Edit
 http://localhost:3000
 Search for a city to view weather info.
 
- API Details
+ #API Details
 GET /api/weather?city={city_name}
 Returns JSON weather data including:
 
@@ -89,7 +95,7 @@ RippleUI
 
 Tailwind CSS
 
- Features
+# Features
 Live weather data via OpenWeatherMap API
 
 Responsive UI with Tailwind + RippleUI
@@ -98,7 +104,7 @@ Clean separation of frontend and backend
 
 Type-safe code with meaningful commits
 
-To Improve (Stretch Goals)
+#To Improve (Stretch Goals)
 Add loading spinner and error message UI
 
 Better weather icons and styling
